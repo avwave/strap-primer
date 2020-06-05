@@ -1,0 +1,21 @@
+{
+  "name": "strap-primer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:avwave/strap-primer.git",
+  "author": "Ray Arvin Rimorin <rayarvin@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "compile": "node-sass src/scss -o dist/css",
+    "watch": "node-sass --watch src/scss -o dist/css",
+    "minify": "npm run compile && postcss dist/css/index.css > dist/css/index.min.css"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1"
+  }
+}
